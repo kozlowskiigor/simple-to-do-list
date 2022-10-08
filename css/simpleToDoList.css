@@ -50,3 +50,10 @@ html {
     padding: 10px;
     cursor: pointer;
 }
+
+.tasksList {
+    list-style: none;
+    padding: 30px;
+    background-color: white;
+    margin: 0;
+}

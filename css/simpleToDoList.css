@@ -7,6 +7,12 @@ html {
 }
 
 .body {
-    color: #efe;
+    background-color: #eee;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
     max-width: 1000px;
+}
+
+.header {
+    color: black;
 }

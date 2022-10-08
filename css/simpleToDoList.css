@@ -10,9 +10,35 @@ html {
     background-color: #eee;
     font-family: 'Montserrat', sans-serif;
     margin: 0 auto;
+    padding: 20px;
+    word-break: break-word;
     max-width: 1000px;
+    line-height: 1.5;
 }
 
 .header {
-    color: black;
+    font-size: 22px;
+}
+
+.container {
+    background-color: white;
+}
+
+.container__header {
+    padding: 20px;
+    border-bottom: 3px solid #eee;
+    font-size: 22px;
+    margin: 10px 0 0 0;
+}
+
+.form__input {
+    border-color: #eee;
+    border-style: solid;
+}
+
+.form {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr, auto;
+    padding: 20px;
 }

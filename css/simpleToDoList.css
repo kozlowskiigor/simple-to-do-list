@@ -17,7 +17,7 @@ html {
 }
 
 .header {
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .container {
@@ -39,6 +39,14 @@ html {
 .form {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: 1fr, auto;
+    grid-template-columns: 1fr auto;
     padding: 20px;
+}
+
+.button {
+    background-color: teal;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
 }

@@ -1,5 +1,5 @@
 {
-    const tasks = []
+    const tasks = [];
 
     const addNewTask = (newTaskContent) => {
         tasks.push({
@@ -20,7 +20,7 @@
     };
 
     const bindEvents = () => {
-        const removeButtons = document.querySelectorAll(".js-remove");
+        const removeButtons = document.querySelectorAll(".js.remove");
 
         removeButtons.forEach((removeButton, index) => {
             removeButton.addEventListener("click", () => {
@@ -28,7 +28,7 @@
             });
         });
 
-        const toggleDoneButtons = document.querySelectorAll(".js-done");
+        const toggleDoneButtons = document.querySelectorAll(".js.done");
 
         toggleDoneButtons.forEach((toggleDoneButton, index) => {
             toggleDoneButton.addEventListener("click", () => {
@@ -42,24 +42,14 @@
 
         for (const task of tasks) {
             htmlString += `
-            
-                <li class="list__item">
-                    <button class="list__button list__button--done js-done">
-                        ${task.done ? "✔" : ""}
-                    </button>
-                    <span class="${task.done ? "list__item--done" : ""}">
-                        ${task.content}
-                    </span>
-                    <button class="list__button list__button--remove js-remove">
-                    🗑
-                    </button>
-                </li>
+            <li class="list__item${task.done ? "list__item--done" : ""} js-task">
+            <button class="js-done">${task.done ? "✔" : ""}</button>
+            <button class="js-remove">🗑</button>
+            </li>
             `;
         };
 
         document.querySelector(".js-tasks").innerHTML = htmlString;
-
-        const removeButtons = document.querySelectorAll(".js-remove");
 
         bindEvents();
     };
@@ -68,12 +58,14 @@
         event.preventDefault();
 
         const newTaskContent = document.querySelector(".js-newTask").value.trim();
-
         if (newTaskContent === "") {
             return;
-        }
+        };
 
         addNewTask(newTaskContent);
+        clearInput();
+        focusNew
+
     };
 
     const init = () => {

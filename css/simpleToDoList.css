@@ -44,11 +44,16 @@ html {
 }
 
 .button {
+    border-radius: 5px;
     background-color: teal;
     color: #fff;
     border: none;
     padding: 10px;
     cursor: pointer;
+}
+
+.button:hover {
+    background-color: hsl(180, 100%, 30%);
 }
 
 .tasksList {
@@ -63,6 +68,10 @@ html {
     grid-template-columns: auto 1fr auto;
     padding: 10px;
     grid-gap: 10px;
+}
+
+.list__item--margined {
+    padding-top: 4px;
 }
 
 .list__item--done {
@@ -83,9 +92,17 @@ html {
 }
 
 .list__button--done {
-    background-color: hsl(120, 62%, 34%);
+    background-color: hsl(120, 62%, 35%);
+}
+
+.list__button--done:hover {
+    background-color: hsl(120, 62%, 40%);
 }
 
 .list__button--remove {
-    background-color: hsl(348, 83%, 47%);
+    background-color: hsl(348, 83%, 45%);
+}
+
+.list__button--remove:hover {
+    background-color: hsl(348, 83%, 35%);
 }

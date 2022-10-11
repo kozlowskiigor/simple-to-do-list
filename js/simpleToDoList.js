@@ -37,6 +37,13 @@
         });
     };
 
+    const clearInput = () => {
+        const formInput = document.querySelector(".js-newTask");
+    
+        formInput.value = "";
+        formInput.focus();
+    };
+
     const render = () => {
         let htmlString = "";
 
@@ -47,7 +54,7 @@
                     <button class="list__button list__button--done js-done">
                         ${task.done ? "✔" : ""}
                     </button>
-                    <span class="${task.done ? "list__item--done" : ""}">
+                    <span class="list__item--margined${task.done ? "list__item--done" : ""}">
                         ${task.content}
                     </span>
                     <button class="list__button list__button--remove js-remove">
@@ -74,6 +81,7 @@
         }
 
         addNewTask(newTaskContent);
+        clearInput();
     };
 
     const init = () => {

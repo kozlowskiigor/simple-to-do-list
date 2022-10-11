@@ -99,10 +99,18 @@ html {
     background-color: hsl(120, 62%, 40%);
 }
 
+.list__button--done:active {
+    background-color: hsl(120, 62%, 25%);
+}
+
 .list__button--remove {
     background-color: hsl(348, 83%, 45%);
 }
 
 .list__button--remove:hover {
-    background-color: hsl(348, 83%, 35%);
+    background-color: hsl(348, 83%, 40%);
+}
+
+.list__button--remove:active {
+    background-color: hsl(348, 83%, 60%);
 }

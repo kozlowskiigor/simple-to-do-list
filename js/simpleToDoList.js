@@ -8,7 +8,7 @@
 
         render();
     };
-    
+
     const removeTask = (taskIndex) => {
         tasks.splice(taskIndex, 1);
         render();
@@ -42,9 +42,10 @@
 
         for (const task of tasks) {
             htmlString += `
-            <li class="list__item${task.done ? "list__item--done" : ""}>
+            <li class="list__item${task.done ? "list__item--done" : ""} js-task">
             <button class="js-done">${task.done ? "✔" : ""}</button>
             <button class="js-remove">🗑</button>
+            </li>
             `;
         };
 

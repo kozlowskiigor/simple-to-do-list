@@ -61,7 +61,10 @@
             return;
         };
 
-        addNewTask(newTaskContent)
+        addNewTask(newTaskContent);
+        clearInput();
+        focusNew
+
     };
 
     const init = () => {

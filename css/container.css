@@ -1,0 +1,10 @@
+.container {
+    background-color: white;
+}
+
+.container__header {
+    padding: 20px;
+    border-bottom: 3px solid #eee;
+    font-size: 22px;
+    margin: 10px 0 0 0;
+}

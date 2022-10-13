@@ -28,7 +28,7 @@
             });
         });
 
-        const toggleDoneButtons = document.querySelectorAll(".js-done");
+        const toggleDoneButtons = document.querySelectorAll(".js-toggleDone");
 
         toggleDoneButtons.forEach((toggleDoneButton, index) => {
             toggleDoneButton.addEventListener("click", () => {
@@ -51,7 +51,7 @@
             htmlString += `
             
                 <li class="list__item">
-                    <button class="list__button list__button--done js-done">
+                    <button class="list__button list__button--done js-toggleDone">
                         ${task.done ? "✔" : ""}
                     </button>
                     <span class="list__item--margined ${task.done ? "list__item--done" : ""}">

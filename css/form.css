@@ -8,4 +8,5 @@
 .form__input {
     border-color: #eee;
     border-style: solid;
+    padding: 10px;
 }

@@ -74,11 +74,10 @@
 
         const newTaskContent = document.querySelector(".js-newTask").value.trim();
 
-        if (newTaskContent === "") {
-            return;
+        if (newTaskContent !== "") {
+            addNewTask(newTaskContent);
         }
 
-        addNewTask(newTaskContent);
         clearInput();
     };
 

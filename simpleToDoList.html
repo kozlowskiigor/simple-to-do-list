@@ -14,37 +14,39 @@
     <link href="css/section.css" rel="stylesheet">
     <link href="css/form.css" rel="stylesheet">
     <link href="css/button.css" rel="stylesheet">
+    <link href="css/container.css" rel="stylesheet">
     <script defer src="js/simpleToDoList.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;display=swap" rel="stylesheet">
 </head>
 
 <body class="body">
-    <header class="header">
-        <h1>Lista zadań</h1>
-    </header>
-    <section class="section">
-        <h2 class="section__header">Dodaj nowe zadanie</h2>
-        <form class="form js-form">
-            <input class="form__input js-newTask" autofocus placeholder="Jakie zadanie masz do zrobienia?" required
-                name="input">
-            <button class="button">Dodaj zadanie</button>
-        </form>
-    </section>
-    <section class="section">
-        <div class="section__body">
-            <h2 class="section__header">Lista zadań</h2>
-            <div class="buttons js-buttons">
-                <button class="buttons__button js-toggleHideDoneTasks">
-                    Ukryj ukończone
-                </button>
-                <buttons class="buttons__button js-markAllDone">
-                    Ukończ wszystkie
-                </buttons>
+    <div class="container">
+        <header class="header">
+            <h1>Lista zadań</h1>
+        </header>
+        <section class="section">
+            <h2 class="section__header">Dodaj nowe zadanie</h2>
+            <form class="form js-form">
+                <input class="form__input js-newTask" autofocus placeholder="Jakie zadanie masz do zrobienia?" required
+                    name="input">
+                <button class="button">Dodaj zadanie</button>
+            </form>
+        </section>
+        <section class="section">
+            <div class="section__body">
+                <h2 class="section__header">Lista zadań</h2>
+                <div class="buttons js-buttons">
+                    <button class="buttons__button js-toggleHideDoneTasks">
+                        Ukryj ukończone
+                    </button>
+                    <buttons class="buttons__button js-markAllDone">
+                        Ukończ wszystkie
+                    </buttons>
+                </div>
             </div>
-        </div>
-        <ul class="list js-tasks"></ul>
-    </section>
-
+            <ul class="list js-tasks"></ul>
+        </section>
+    </div>
 </body>
 
 </html>

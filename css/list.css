@@ -32,6 +32,7 @@
     height: 30px;
     color: white;
     cursor: pointer;
+    transition: background-color 1s;
 }
 
 .list__button--done {

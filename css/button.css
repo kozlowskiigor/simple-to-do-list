@@ -7,24 +7,28 @@
     transition: transform 1s, background-color 1s;
 }
 
+.button:hover {
+    background-color: hsl(180, 100%, 30%);
+    transform: scale(1.2);
+}
+
 .buttons {
     flex-wrap: wrap;
 }
 
 .buttons__button {
     background-color: white;
-    color: teal;
+    color: hsl(180, 100%, 25%);
     border: none;
     margin: 0 0 0 20px;
+}
+
+.buttons__button:hover {
+    color: hsl(180, 100%, 45%);
 }
 
 @media (max-width:767px) {
     .buttons__button {
         margin-bottom: 10px;
     }
-}
-
-.button:hover {
-    background-color: hsl(180, 100%, 30%);
-    transform: scale(1.2);
 }

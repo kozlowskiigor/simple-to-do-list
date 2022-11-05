@@ -54,27 +54,20 @@
     };
 
     const bindToggleDoneEvents = () => {
-        toggleDoneButtons = document.querySelectorAll(".js-toggleDone");
+        const toggleDoneButtons = document.querySelectorAll(".js-done");
 
         toggleDoneButtons.forEach((toggleDoneButton, index) => {
-            toggleDoneButton.addEventListener(".click", () => {
+            toggleDoneButton.addEventListener("click", () => {
                 toggleTaskDone(index)
             });
         });
     };
 
-    // const clearInput = () => {
-    //     const formInput = document.querySelector(".js-newTask");
-
-    //     formInput.value = "";
-    //     formInput.focus();
-    // };
-
     const renderTasks = () => {
         const taskToHTML = task => `
                 <li class="list__item${task.done && hideDoneTasks ? " list__item--hidden" : ""} js-tasks">
 
-                    <button class="list__button list__button--done js-toggleDone">
+                    <button class="list__button list__button--done js-done">
                         ${task.done ? "✔" : ""}
                     </button>
 

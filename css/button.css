@@ -18,6 +18,12 @@
     margin: 0 0 0 20px;
 }
 
+@media (max-width:767px) {
+    .buttons__button {
+        margin-bottom: 10px;
+    }
+}
+
 .button:hover {
     background-color: hsl(180, 100%, 30%);
     transform: scale(1.2);

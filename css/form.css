@@ -8,7 +8,7 @@
 @media (max-width:767px) {
 .form {
     grid-template-columns: 1fr;
-}
+    }
 }
 
 .form__input {

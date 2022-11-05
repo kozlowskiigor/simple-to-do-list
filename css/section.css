@@ -5,13 +5,24 @@ section {
 
 .section__header {
     align-items: center;
-    padding: 10px 10px 10px 20px;
+    padding: 10px 0 10px 20px;
     margin: 0;
+}
+
+.section__header--borderBottom {
+    border-bottom: 3px solid #eee;
 }
 
 .section__body {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    grid-template-columns: 1fr auto auto;
     border-bottom: 3px solid #eee;
     align-items: center;
+}
+
+@media (max-width:767px) {
+    .section__body {
+        grid-template-columns: 1fr ;
+    }
 }

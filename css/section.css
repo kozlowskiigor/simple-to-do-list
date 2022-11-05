@@ -1,14 +1,17 @@
 section {
     background-color: white;
+    border-bottom: 10px solid #eee;
 }
 
 .section__header {
     align-items: center;
-    padding: 5px 0 0 20px;
-    border-bottom: 3px solid #eee;
-    margin: 10px 0 0 0;
+    padding: 10px 10px 10px 20px;
+    margin: 0;
 }
 
 .section__body {
     display: grid;
+    grid-template-columns: auto auto;
+    border-bottom: 3px solid #eee;
+    align-items: center;
 }

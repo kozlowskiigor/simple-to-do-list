@@ -23,6 +23,6 @@ section {
 
 @media (max-width:767px) {
     .section__body {
-        grid-template-columns: 1fr ;
+        grid-template-columns: 1fr;
     }
 }

@@ -63,12 +63,12 @@
         });
     };
 
-    const clearInput = () => {
-        const formInput = document.querySelector(".js-newTask");
+    // const clearInput = () => {
+    //     const formInput = document.querySelector(".js-newTask");
 
-        formInput.value = "";
-        formInput.focus();
-    };
+    //     formInput.value = "";
+    //     formInput.focus();
+    // };
 
     const renderTasks = () => {
         const taskToHTML = task => `

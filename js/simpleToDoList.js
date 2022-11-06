@@ -3,10 +3,7 @@
     let hideDoneTasks = false;
 
     const addNewTask = (newTaskContent) => {
-        tasks = [
-            ...tasks,
-            { content: newTaskContent },
-        ];
+        tasks = [...tasks, { content: newTaskContent }];
         render();
     };
 

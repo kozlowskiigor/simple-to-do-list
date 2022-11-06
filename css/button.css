@@ -24,6 +24,10 @@
     transition: color 0.5s;
 }
 
+.buttons__button:disabled {
+    color: #ccc;
+}
+
 .buttons__button:hover {
     color: hsl(180, 100%, 35%);
 }

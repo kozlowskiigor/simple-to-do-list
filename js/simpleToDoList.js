@@ -62,11 +62,13 @@
 
     const renderTasks = () => {
         const taskToHTML = task => `
-            <li class="list__item${task.done && hideDoneTasks ? " list__item--hidden" : ""} js-tasks">
+            <li class="
+            list__item${task.done && hideDoneTasks ? " list__item--hidden" : ""} js-tasks">
                 <button class="list__button list__button--done js-done">
                     ${task.done ? "✔" : ""}
                 </button>
-                <span class="list__item--margined ${task.done ? "list__item--done" : ""}">
+                <span class="
+                list__item--margined ${task.done ? "list__item--done" : ""}">
                     ${task.content}
                 </span>
                 <button class="list__button list__button--remove js-remove">

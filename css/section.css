@@ -16,7 +16,7 @@ section {
 .section__body {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: 1fr auto auto;
+    grid-template-columns: 1fr auto;
     border-bottom: 3px solid #eee;
     align-items: center;
 }

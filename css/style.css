@@ -6,7 +6,7 @@ html {
     box-sizing: inherit;
 }
 
-.body {
+/* .body {
     background-color: #eee;
     font-family: 'Montserrat', sans-serif;
     margin: 0 auto;
@@ -14,7 +14,7 @@ html {
     word-break: break-word;
     max-width: 1000px;
     line-height: 1.5;
-}
+} */
 
 .header {
     font-size: 20px;
